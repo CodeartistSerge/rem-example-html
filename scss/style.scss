@@ -1,0 +1,168 @@
+@import 'rembase';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+body {
+	font-family: 'Arial';
+	color: #fff;
+	background: #111;
+}
+
+.header_block {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-size: 1rem;
+	a.logo {
+		font-size: 3em;
+		text-transform: uppercase;
+		letter-spacing: -0.05em;
+		color: #fff;
+		line-height: 1.3em;
+		padding: 0 1em;
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+		span {
+			font-size: 1.6em;
+			color: #f33;
+			opacity: 0.75;
+		}
+		&:before {
+			font-size: 1.6em;
+			content: '<';
+			display: block;
+			position: absolute;
+			height: 100%;
+			top: 50%;
+			left: 0;
+			color: #f33;
+			opacity: 0.75;
+		}
+		&:after {
+			font-size: 1.6em;
+			content: '>';
+			display: block;
+			position: absolute;
+			height: 100%;
+			top: 50%;
+			right: 0;
+			color: #f33;
+			opacity: 0.75;
+		}
+	}
+}
+
+footer.header_block {
+	font-size: 0.5rem;
+	p {
+		text-align: right;
+		font-size: 1.22807rem;
+		text-transform: uppercase;
+	}
+}
+
+.first_block {
+	padding-top: 6.14035rem;
+	background: #333;
+	background: linear-gradient(to bottom, #333 0%, #222 100%);
+	h1 {
+		font-size: 4.38596rem;
+		line-height: 4.38596rem;
+		text-transform: uppercase;
+		font-family: 'Serif';
+		margin-bottom: 3.07018rem;
+	}
+	h2 {
+		font-size: 2.10526rem;
+		line-height: 3.68421rem;
+		text-transform: uppercase;
+		font-family: 'Serif';
+		margin-bottom: 2.19298rem;
+	}
+	p {
+		font-size: 1.84211rem;
+		line-height: 2.80702rem;
+	}
+	img {
+		width: 100%;
+		max-width: 51.0526rem;
+	}
+	a.the_button {
+		display: inline-block;
+		padding: 0 4.38596rem;
+		background: #fff;
+		border-radius: 2.19298rem;
+		line-height: 4.38596rem;
+		text-align: center;
+		text-transform: uppercase;
+		color: #111;
+		font-size: 1.57895rem;
+		text-decoration: none;
+		transition: all 0.3s;
+		&:hover {
+			background: #999;
+		}
+	}
+	.row {
+		margin-bottom: 4.38596rem;
+		.col-md-4 {
+			margin-bottom: 4.38596rem;
+			p {
+				font-size: 1.57895rem;
+				line-height: 1.7em;
+				margin-bottom: 2.19298rem;
+			}
+		}
+	}
+}
+
+.footer_block {
+	padding-top: 2.19298rem;
+	padding-bottom: 2.19298rem;
+	a.logo {
+		font-size: 3.50877rem;
+		text-transform: uppercase;
+		letter-spacing: -0.263158rem;
+		color: #fff;
+		line-height: 1em;
+		padding: 0 0.7em;
+		display: inline-block;
+		position: relative;
+		span {
+			font-size: 4.38596rem;
+			color: #f33;
+			opacity: 0.75;
+		}
+		&:before {
+			font-size: 4.38596rem;
+			content: '<';
+			display: block;
+			position: absolute;
+			height: 100%;
+			top: 50%;
+			left: 0;
+			color: #f33;
+			opacity: 0.75;
+		}
+		&:after {
+			font-size: 4.38596rem;
+			content: '>';
+			display: block;
+			position: absolute;
+			height: 100%;
+			top: 50%;
+			right: 0;
+			color: #f33;
+			opacity: 0.75;
+		}
+	}
+}
+
+@import 'responsive';
